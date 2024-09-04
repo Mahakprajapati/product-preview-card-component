@@ -25,11 +25,12 @@ main{
     display: grid;
 }
 .text{
-    padding-inline: 2.02em;
+    padding-inline: 2.05em;
     padding-block: 1em;
 }
 .text h1{
     font-weight: 700;
+    font-family: 'Fraunces';
 }
 .text #p-1{
     color: var(--Dark-grayish-blue);
