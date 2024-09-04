@@ -1,0 +1,109 @@
+:root{
+    --Dark-cyan: hsl(158, 36%, 37%);
+--Cream: hsl(30, 38%, 92%);
+--Very-dark-blue: hsl(212, 21%, 14%);
+--Dark-grayish-blue: hsl(228, 12%, 48%);
+--White: hsl(0, 0%, 100%);
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    background-color: var(--Cream);
+    min-height: 100vh;
+    padding-inline: 1em;
+    padding-block: 2em;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    max-width: 345px;
+    border-radius: 1em;
+    overflow: hidden;
+    background-color: var(--White);
+    display: grid;
+}
+.text{
+    padding-inline: 2.02em;
+    padding-block: 1em;
+}
+.text h1{
+    font-weight: 700;
+}
+.text #p-1{
+    color: var(--Dark-grayish-blue);
+    margin: 0;
+    text-transform: uppercase;
+}
+.text #p-2{
+    line-height: 1.5em;
+    color: var(--Dark-grayish-blue);
+    margin: 0;
+    font-family: 'Montserrat',sans-serif;
+    font-size: 0.8rem;
+}
+.doller{
+    display: flex;
+    align-items: center;
+    margin-block: 0.5em;
+    font-family: 'Fraunces', sans-serif;
+}
+.doller h2{
+    margin-right: 1em;
+    font-size: xx-large;
+    margin-block: 0;
+    color: var(--Dark-cyan);
+}
+.doller p{
+    text-decoration:line-through;
+    color: var(--Dark-grayish-blue);
+}
+a{
+    display: block;
+    background-color: var(--Dark-cyan);
+    text-align: center;
+    padding:0.5em 1em 0.5em 1em;
+    border-radius: 0.5em;
+    color: var(--White);
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+a:hover{
+    background-color: hsl(158deg 38.92% 25.05%);
+}
+
+
+
+@media (max-width:376px){
+    .image{
+        background-image: url(./product-preview-card-component-main/images/image-product-mobile.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        max-width: 345px;
+        min-height: 240px;
+    }
+}
+@media (min-width:377px){
+    .image{
+        background-image: url(./product-preview-card-component-main/images/image-product-desktop.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+    .container{
+        grid-template-columns: 1fr 1fr;
+        max-width: 500px;
+        min-height: 375px;
+    }
+    .text{
+
+        padding: 1em;
+    }
+    .text h1{
+        margin-top: 0.5em;
+    }
+}
